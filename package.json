@@ -1,0 +1,31 @@
+{
+  "name": "karma-auth.npm",
+  "version": "1.0.0",
+  "description": "Karma Auth is a auth library, an alternative to firebase auth. Karma Auth is a opensource project under the \"Karma Project\".",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelloB1989/karma-auth.npm.git"
+  },
+  "keywords": [
+    "karma",
+    "auth"
+  ],
+  "author": "MelloB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MelloB1989/karma-auth.npm/issues"
+  },
+  "homepage": "https://github.com/MelloB1989/karma-auth.npm#readme",
+  "dependencies": {
+    "@types/node": "^20.12.11",
+    "axios": "^1.6.8",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0"
+  }
+}

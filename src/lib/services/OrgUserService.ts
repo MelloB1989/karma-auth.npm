@@ -1,7 +1,8 @@
 import { ApiService } from './OrgApiService';
 import { Config } from '../../config';
+import type { updateUser, User } from '../../../src/types';
 
-export class UserService extends ApiService {
+export class OrgUsers extends ApiService {
     constructor(baseURL: string, config: Config) {
         super(baseURL, config);
     }
@@ -22,7 +23,7 @@ export class UserService extends ApiService {
         return this.post('/users/auth/phone', { phone, password });
     }
 
-    async updateUser(uid: string, updateData: any) {
+    async updateUser(uid: string, updateData: updateUser) {
         return this.post(`/users/update/${uid}`, updateData);
     }
 

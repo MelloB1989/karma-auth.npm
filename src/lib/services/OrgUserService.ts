@@ -7,26 +7,26 @@ export class UserService extends ApiService {
     }
 
     async createUser(userData: any) {
-        return this.post('/user/create', userData);
+        return this.post('/users/create', userData);
     }
 
     async getUser(uid: string) {
-        return this.get(`/user/get/${uid}`);
+        return this.get(`/users/get/${uid}`);
     }
     
     async authenticateUserByEmail(email: string, password: string) {
-        return this.post('/user/auth/email', { email, password });
+        return this.post('/users/auth/email', { email, password });
     }
 
     async authenticateUserByPhone(phone: string, password: string) {
-        return this.post('/user/auth/phone', { phone, password });
+        return this.post('/users/auth/phone', { phone, password });
     }
 
     async updateUser(uid: string, updateData: any) {
-        return this.post(`/user/update/${uid}`, updateData);
+        return this.post(`/users/update/${uid}`, updateData);
     }
 
     async deleteUser(uid: string) {
-        return this.delete(`/user/delete/${uid}`);
+        return this.delete(`/users/delete/${uid}`);
     }
 }

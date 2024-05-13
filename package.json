@@ -1,6 +1,6 @@
 {
   "name": "karma-auth.npm",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Karma Auth is a auth library, an alternative to firebase auth. Karma Auth is a opensource project under the \"Karma Project\".",
   "main": "dist/index.js",
   "scripts": {

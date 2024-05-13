@@ -10,7 +10,7 @@ class KarmaAuth {
     UserRoles: OrgUserRoles;
 
     constructor(orgAuthId: string, orgAuthToken: string) {
-        const baseURL = 'http://localhost:9080/v1';
+        const baseURL = 'https://karma-auth.coffeecodes.in/v1';
         const config = new Config(orgAuthId, orgAuthToken);
         this.Users = new OrgUsers(baseURL, config);
         this.Roles = new OrgRoles(baseURL, config);
@@ -21,7 +21,8 @@ class KarmaAuth {
 class KarmaUser {
     Users: Users;
 
-    constructor(baseURL: string, token: string) {
+    constructor(token: string) {
+        const baseURL = 'https://karma-auth.coffeecodes.in/v1';
         this.Users = new Users(baseURL, token);
     }
 }

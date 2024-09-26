@@ -22,7 +22,7 @@ class KarmaUser {
     Users: Users;
 
     constructor(token: string) {
-        const baseURL = 'https://karma-auth.coffeecodes.in/v1';
+        const baseURL = 'https://karma-auth.app.k8s.coffeecodes.in/v1';
         this.Users = new Users(baseURL, token);
     }
 }
